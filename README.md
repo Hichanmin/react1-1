@@ -9,14 +9,25 @@
 ---
 ## 5/8 강의
 ### 함수형에서 이벤트 핸들러를 정의하는 방법
-함수형에서 this 를 사용하지 않고,
+- 함수형에서 this 를 사용하지 않고,
 onClick 에서 바로 HandleClick 을 넘기면 됩니다.
 ### Arguments
 * 함수를 정의할 때는 파라미터(Parameter)혹은 매개변수,
 * 함수를 사용할 때는 아귀먼트(Argument)혹은 인수 라고 부릅니다.
 * 이벤트 핸들러에 매개변수를 전달해야 하는 경우도 많습니다.
-* event라는 매개변수는 리액트의 이벤트 객체를 의미합니다.
-
+* event 라는 매개변수는 리액트의 이벤트 객체를 의미합니다.
+### 조건부 렌더링이란?
+```jsx
+function Greeting(props) {
+    const isLoggedIn = props.isLoggedIn;
+    if (isloggedIn) {
+        return <UserGreeting />;
+    }
+    return <GuestGreeting />;
+}
+```
+### 엘리번트 변수
+- 렌더링해야 될 컴포넌트를 변수처럼 사용하는 방법이 엘리먼트 변수 입니다.
 
 ---
 ## 4/3 강의
