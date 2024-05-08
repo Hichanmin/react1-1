@@ -1,7 +1,7 @@
 import React from "react";
 import Book from "./Book";
 
-export default function Library(props) {
+function Library(props) {
     return (
         <div>
             <Book name="처음 만난 파이썬" numOfPage={300} />
@@ -10,3 +10,5 @@ export default function Library(props) {
         </div>
     );
 }
+
+export default Library;
