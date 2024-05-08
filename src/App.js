@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import MyButton from "./05_08수업/MyButton";
+import LoginControl from "./05_08_Study/LoginControl";
 
 function App() {
   return (
     <div className="App">
-      <MyButton />
+      <LoginControl />
     </div>
   );
 }
