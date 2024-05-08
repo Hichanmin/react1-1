@@ -11,16 +11,19 @@ export default function LoginControl(props){
         setIsLoggedIn(false)
     }
 
-    let button
-    if (isLoggedIn) {
-        button = <LogoutButton onClick = {handleLogoutClick}/>
-    }else{
-        button = <LoginButton onClick = {handleLoginClick}/>
-    }
+    // let button
+    // if (isLoggedIn) {
+    //     button = <LogoutButton onClick = {handleLogoutClick}/>
+    // }else{
+    //     button = <LoginButton onClick = {handleLoginClick}/>
+    // }
     return (
         <div>
             <Greeting isLoggedIn = {isLoggedIn} />
-            {button}
+            {/*{button}*/}
+            {
+                isLoggedIn ? <LogoutButton onClick = {handleLogoutClick}/> : <LoginButton onClick = {handleLoginClick}/>
+            }
         </div>
     )
 }
