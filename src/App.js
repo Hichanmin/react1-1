@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import LoginControl from "./05_08_Study/LoginControl";
-import MainPage from "./05_08_Study/MainPage";
+import LandingPage from "./05_22_Study/LandingPage";
 
 function App() {
   return (
     <div className="App">
-      <MainPage />
+      <LandingPage />
     </div>
   );
 }
